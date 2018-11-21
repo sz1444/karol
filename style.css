@@ -1,168 +1,180 @@
-body{
+body {
     padding-top: 70px;
 }
 
-h2::after{
+h2::after {
     content: "";
     display: block;
     width: 40px;
     height: 2px;
-    background-color: #239066;
-    margin:10px auto;
+    background-color: #80d110;
+    margin: 10px auto;
 }
 
-h3{
+h3 {
     font-size: 1.5rem;
 }
 
-nav{
+nav {
     background-color: #fff;
     padding: 15px 0;
-box-shadow: 0 2px 5px #ddd;
-width: 100%;
+    box-shadow: 0 2px 5px #ddd;
+    width: 100%;
     position: fixed;
-    top:0;
-    left:0;
-    z-index: 2;
+    top: 0;
+    left: 0;
+    z-index: 3;
 }
 
-nav a{
-    color:#666;
+nav a {
+    color: #666;
 }
 
-nav a:hover{
-    color:#239066;
+nav a:hover {
+    color: #80d110;
 }
 
-nav .fa-instagram{
+nav .fa-instagram {
     color: #8a3ab9;
 }
-nav .fa-facebook{
+
+nav .fa-facebook {
     color: #3b5998ff;
 }
-nav .fa-youtube{
+
+nav .fa-youtube {
     color: #ff0000;
 }
 
-.w-100{
-max-height: 90vh;
+.w-100 {
+    max-height: 90vh;
 
 }
 
-section{
+section {
     padding: 50px 0;
     text-align: center;
 }
 
-section p{
-    color:#333;
+section p {
+    color: #333;
 }
 
-.benefits ul{
+.benefits ul {
     padding: 0;
 }
-.benefits li{
+
+.benefits li {
     padding: 40px;
     font-size: 1rem;
     list-style: none;
     text-align: center;
-    color:#666;
+    color: #666;
 }
 
-.benefits li span{
+.benefits li span {
     font-size: 3rem;
-    color:#ffffff;
+    color: #ffffff;
     margin: 20px auto;
     width: 100px;
     line-height: 100px;
     text-align: center;
     border-radius: 100%;
     height: 100px;
-    background-color: #239066;;
+    background-color: #80d110;
+    ;
 }
 
-.subscribe{
- background-image: url(img/tlo.jpg);  
+.subscribe {
+    background-image: url(img/tlo.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color:#fff;
+    color: #fff;
+    padding: 180px 0;
 }
 
-.subscribe input{
-    border: 1px solid #fff;;
-    padding:10px 20px;
+.subscribe input {
+    border: 1px solid #fff;
+    ;
+    padding: 10px 20px;
     margin: 30px auto;
     width: 50%;
     background-color: transparent;
     color: #fff;
 }
 
-.subscribe input::placeholder{
-    color:#ddd;
+.subscribe input::placeholder {
+    color: #ddd;
 }
 
-.subscribe .btn{
+.subscribe .btn {
     border: 0;
     border-radius: 0;
-    padding:10px 30px;
+    padding: 10px 30px;
     display: block;
-    margin:0 auto;
-    
-    font-size:1rem;
+    margin: 0 auto;
+
+    font-size: 1rem;
     text-transform: uppercase;
     background-color: #80d110;
 }
 
-.about h2::after{
+.about h2::after {
     margin-left: 0;
 }
 
-.about .container{
-    background-image: url("img/tlo2.jpg");
+.about .container {
+    background-image: url("img/tlo2.png");
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 50%;
-   
+
 }
 
-.about .col-sm{
+.about .col-sm {
     max-width: 50%;
 }
 
-.partner{
+.effect {
+    color: #fff;
     background-image: url(img/tlo3.jpg);
-     background-attachment: fixed;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+    padding: 180px;
+    position: relative;
+
 }
 
-.partner li{
-    color:#fff;
-    font-size: 2rem;
-    list-style: none;
-    text-align: center;
-    font-weight: bold;
+.effect h2 {
+    position: relative;
+    z-index: 2;
+
 }
 
-.partner li span{
-    font-size: 5rem;
+.black {
+    position: absolute;
+    background-color: rgba(0, 21, 69, 0.8);
+    z-index: -;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.partner li p{
-    color:#fff;
-    font-size: 1.2rem;
-}
 
-.contakt li{
-    list-style: none;
-}
-
-.contakt li span{
-    font-size: 2rem;
-    color:#404040;
-    margin: 20px auto;
+.effect a {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: #80d110;
+    border-radius: 50px;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    box-shadow: 5px 5px 5px #262626;
+    position: relative;
+    z-index: 2;
 }
