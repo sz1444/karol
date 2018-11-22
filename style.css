@@ -3,6 +3,10 @@ body {
     overflow-x: hidden;
 }
 
+h1{
+    color:#ffffff;
+}
+
 h2 {
     margin-bottom: 20px;
 }
@@ -17,7 +21,10 @@ h2::after {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color:#395c09;
+    margin-top: 50px;
 }
 
 a{
@@ -57,6 +64,9 @@ a:hover{
     color: #666;
 }
 
+.d-inline{
+    flex-direction: row;
+}
 .navbar-light .navbar-nav .nav-link:hover {
     color: #80d110;
 }
@@ -69,8 +79,16 @@ nav .fa-facebook {
     color: #3b5998ff;
 }
 
+.nav-link{
+    padding: 10px;
+ 
+}
+
 nav .fa-youtube {
     color: #ff0000;
+}
+.navbar-light .navbar-toggler{
+    border: 0;
 }
 
 .jumbotron {
@@ -124,13 +142,11 @@ section p {
 .benefits li span {
     font-size: 2.5rem;
     color: #62a800;
-    margin: 20px auto;
+    margin: 40px auto;
+    margin-bottom: 0px;
     width: 70px;
     text-align: center;
-    border-radius: 100%;
-
 }
-
 .subscribe {
     background-image: url(img/tlo.jpg);
     background-attachment: fixed;
@@ -250,7 +266,7 @@ padding-top: 100px;
     padding: 0;
     border-right: 1px solid #ddd;
     margin: 40px auto;
-    margin-left: -20px;
+    
 }
 
 .contakt li:nth-child(4){
@@ -294,16 +310,16 @@ footer p {
     border-left: 1px solid #ddd;
 }
 
-.cooperation .col-8 hr,
+.cooperation .col-9 hr,
 .investment hr {
     margin: 40px 0;
 }
 
-.cooperation .col-lg-4,
-.investment .col-lg-4,
-.about-as .col-lg-4,
-.contakt-me .col-lg-4,
-.efeckts .col-lg-4 {
+.cooperation .col-lg-3,
+.investment .col-lg-3,
+.about-as .col-lg-3,
+.contakt-me .col-lg-3,
+.efeckts .col-lg-3 {
     border-left: 1px solid #ddd;
 
 
@@ -313,7 +329,7 @@ footer p {
     margin-bottom: 3rem;
 }
 
-.efeckts .col-lg-8 {
+.efeckts .col-lg-9 {
     font-size: 0.8rem;
     padding: 50px;
 }
@@ -336,7 +352,7 @@ footer p {
     margin: 0px 0px 0px 10px;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "\f058";
+    content: "\f14a";
     color: #6bb900;
     margin: 10px;
     margin-left: -25px;
@@ -346,7 +362,9 @@ footer p {
 
 .about-as .media img {
     border-radius: 50%;
+    margin-bottom: 15px;
 }
+.about-as .media p{display: inline-block;}
 
 .contakt-me .email {
     padding: 10px 20px;
@@ -382,13 +400,34 @@ footer p {
     list-style: none;
 }
 
+.register{
+    display: inline-block;
+    text-align: center;
+    margin: 40px 0;
+    font-size: 1.6rem;
+    background-color: #6db20d;
+    padding: 15px 70px;
+    font-weight: bold;
+    color:#fff;
+    transition-duration: .3s;
+}
+.img-fluid{
+ max-width: 100%;  
+    
+}
+.register:hover{
+    color:#fff;
+    text-decoration: none;
+    background-color: #59910a;
+}
+
 @media (max-width: 992px) {
 
-    .cooperation .col-lg-4,
-    .investment .col-lg-4,
-    .about-as .col-lg-4,
-    .contakt-me .col-lg-4,
-    .efeckts .col-lg-4 {
+    .cooperation .col-lg-3,
+    .investment .col-lg-3,
+    .about-as .col-lg-3,
+    .contakt-me .col-lg-3,
+    .efeckts .col-lg-3 {
         border-left: 0px solid #fff;
 
         padding-top: 100px;
@@ -406,16 +445,24 @@ footer p {
     .about h2::after {
         margin-left: auto;
     }
+    .contakt li {
+        padding: 0;
+        border: 0;
+    }
+    
+    .small li{
+        padding: 30px;
+    }
 }
 
 @media (max-width: 770px) {
     .about-as .media {
         display: block;
-        text-align: center
+       
     }
 
     .about-as .media img {
-        margin: 20px;
+border-radius: 0px;
     }
 
 
