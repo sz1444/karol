@@ -2,9 +2,11 @@ body {
     padding-top: 70px;
     overflow-x: hidden;
 }
-h2{
+
+h2 {
     margin-bottom: 20px;
 }
+
 h2::after {
     content: "";
     display: block;
@@ -18,6 +20,14 @@ h3 {
     font-size: 1.5rem;
 }
 
+a{
+    color:#6db20d;
+}
+
+a:hover{
+    color:#4c7c0a;
+}
+
 .navbar {
     background-color: #fff;
     padding: 15px 0;
@@ -27,29 +37,27 @@ h3 {
     top: 0;
     left: 0;
     z-index: 3;
-    
+
 }
 
-.navbar-expand-lg .navbar-collapse{
+.navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
 }
 
-.navbar>.container, .navbar>.container-fluid{
+.navbar > .container,
+.navbar > .container-fluid {
     justify-content: space-between;
 }
 
-.
-
-.nav-item.active {
-    color:#80d110;
-    font-weight: bold;
+.navbar-light .navbar-nav .nav-link.active {
+    color: #75bc14;
 }
 
-.nav-link  {
+.nav-link {
     color: #666;
 }
 
-nav a:hover {
+.navbar-light .navbar-nav .nav-link:hover {
     color: #80d110;
 }
 
@@ -66,25 +74,28 @@ nav .fa-youtube {
 }
 
 .jumbotron {
-    text-shadow: 1px 1px 1px #000;;
+    text-shadow: 1px 1px 1px #000;
+    ;
     padding: 120px;
     background-image: url(img/tlo4.jpg);
     background-size: cover;
-    color:#fff;
+    color: #fff;
+    border-radius: 0;
 }
 
-.jumbotron .btn{
+.jumbotron .btn {
     background-color: #80d110;
-    color:#fff;
+    color: #fff;
     border-radius: 50px;
-    text-shadow: 1px 1px 1px #000;;
-    padding:10px 30px;
-    box-shadow: 2px  2px 12px #666; 
+    text-shadow: 1px 1px 1px #000;
+    ;
+    padding: 10px 30px;
+    box-shadow: 2px 2px 12px #666;
     transition-duration: .3s;
 }
 
-.jumbotron .btn:hover{
-     background-color: #6db20d;
+.jumbotron .btn:hover {
+    background-color: #6db20d;
 }
 
 section {
@@ -98,12 +109,12 @@ section p {
 
 .benefits ul {
     padding: 0;
-   
+
 }
 
 .benefits li {
     padding: 4px;
-     
+
     font-size: 1rem;
     list-style: none;
     text-align: center;
@@ -117,7 +128,7 @@ section p {
     width: 70px;
     text-align: center;
     border-radius: 100%;
-    
+
 }
 
 .subscribe {
@@ -156,7 +167,7 @@ section p {
     transition-duration: .3s;
 }
 
-.subscribe .btn:hover{
+.subscribe .btn:hover {
     background-color: #6db20d;
 }
 
@@ -174,6 +185,7 @@ section p {
 
 .about .col-sm {
     max-width: 50%;
+    text-align: left;
 }
 
 .effect {
@@ -183,7 +195,7 @@ section p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 180px;
+    padding: 180px 0;
     position: relative;
 
 }
@@ -219,57 +231,98 @@ section p {
     transition-duration: .3s;
 }
 
-.effect a:hover{
+.effect a:hover {
     background-color: #6db20d;
     text-decoration: none;
 }
 
-.contakt{
-    border-top:1px solid #ddd;;
+.contakt {
+padding-top: 100px;
+    border-top: 1px solid #ddd;
+    
 }
 
-.contakt li{
+.contakt ul{
+    padding: 0;
+}
+.contakt li {
     list-style: none;
-    margin-left:-40px;
+    padding: 0;
+    border-right: 1px solid #ddd;
+    margin: 40px auto;
+    margin-left: -20px;
 }
 
-.contakt span{
-    font-size: 2.5rem;
+.contakt li:nth-child(4){
+    border-right: 0;
+}
+
+.contakt span {
+    font-size: 1.5rem;
     margin: 20px;
+    color: #426c09;
+}
+
+.small{
+    background-color: #e2fcc0;
+    padding-top: 0;
+    margin-top: 100px;
+}
+.small ul{
+    
+}
+
+.small li{
+    
+    margin: 0;
+    margin-bottom: -66px;   
 }
 
 
 
-
-footer{
-     border-top: 1px solid #ddd;
+footer {
+    border-top: 1px solid #ddd;
     padding: 20px;
 }
 
-footer p{
+footer p {
     margin: 0;
 }
 
 
-.border-left{
+.border-left {
     border-left: 1px solid #ddd;
 }
 
-.cooperation .col-8 hr, .investment hr{
-   margin: 40px 0;
+.cooperation .col-8 hr,
+.investment hr {
+    margin: 40px 0;
 }
 
-.cooperation .col-lg-4, .investment .col-lg-4 , .about-as .col-lg-4, .contakt-me .col-lg-4{
-border-left: 1px solid #ddd;
-    
-    
+.cooperation .col-lg-4,
+.investment .col-lg-4,
+.about-as .col-lg-4,
+.contakt-me .col-lg-4,
+.efeckts .col-lg-4 {
+    border-left: 1px solid #ddd;
+
+
 }
 
-.investment img{
+.margin-3 {
+    margin-bottom: 3rem;
+}
+
+.efeckts .col-lg-8 {
+    font-size: 0.8rem;
+    padding: 50px;
+}
+
+.investment img {
     display: block;
 }
 
-.investment li{
+.investment li {
     list-style: none;
     padding: 0;
     margin-top: 20px;
@@ -277,58 +330,93 @@ border-left: 1px solid #ddd;
 }
 
 
-.investment li::before{
+.investment li::before {
 
-   font-style: normal;
-   margin:0px 0px 0px 10px;
-        font-family: "Font Awesome 5 Free"; 
-    font-weight: 900; 
+    font-style: normal;
+    margin: 0px 0px 0px 10px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     content: "\f058";
-  color:#6bb900;
+    color: #6bb900;
     margin: 10px;
     margin-left: -25px;
- 
+
 }
 
 
-.about-as .media img{
-    border-radius: 0%;
+.about-as .media img {
+    border-radius: 50%;
 }
 
-.contakt-me .email{
-    padding:10px 20px;
-    
+.contakt-me .email {
+    padding: 10px 20px;
+
     border: 0;
     background-color: #eee;
 }
 
-.contakt-me .send{
-background-color: #63a00d;
-    border:0;
+.contakt-me .send {
+    background-color: #63a00d;
+    border: 0;
     border-radius: 0 50px 50px 0;
     padding: 10px 50px;
-    color:#fff;
+    color: #fff;
     transition-duration: .3s;
     cursor: pointer;
 }
-.contakt-me .send:hover{
+
+.contakt-me .send:hover {
     background-color: #80d110;
 }
 
-@media (max-width: 992px) { 
-.cooperation .col-lg-4, .investment .col-lg-4, .about-as .col-lg-4, .contakt-me .col-lg-4{
-border-left: 0px solid #fff;
-
-    padding-top: 100px;
+.gallery ul {
+    padding: 0;
+    display: inline-flex;
 }
-    
- @media (max-width: 770px){
-     .about-as .media {
-         display: block;
-         text-align: center
-     }
-     
-     .about-as .media img{
-         margin: 20px;
-     }
+
+.gallery li {
+    min-width: 49%;
+
+    align-content: flex-start;
+    margin: 20px auto;
+    list-style: none;
+}
+
+@media (max-width: 992px) {
+
+    .cooperation .col-lg-4,
+    .investment .col-lg-4,
+    .about-as .col-lg-4,
+    .contakt-me .col-lg-4,
+    .efeckts .col-lg-4 {
+        border-left: 0px solid #fff;
+
+        padding-top: 100px;
+    }
+
+    .about .container {
+        background-image: none;
+    }
+
+    .about .col-sm {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .about h2::after {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 770px) {
+    .about-as .media {
+        display: block;
+        text-align: center
+    }
+
+    .about-as .media img {
+        margin: 20px;
+    }
+
+
 }
