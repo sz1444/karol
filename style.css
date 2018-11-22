@@ -1,7 +1,10 @@
 body {
     padding-top: 70px;
+    overflow-x: hidden;
 }
-
+h2{
+    margin-bottom: 20px;
+}
 h2::after {
     content: "";
     display: block;
@@ -15,18 +18,34 @@ h3 {
     font-size: 1.5rem;
 }
 
-nav {
+.navbar {
     background-color: #fff;
     padding: 15px 0;
-    box-shadow: 0 2px 5px #ddd;
+    box-shadow: 0 1px 1px #ddd;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 3;
+    
 }
 
-nav a {
+.navbar-expand-lg .navbar-collapse{
+    justify-content: flex-end;
+}
+
+.navbar>.container, .navbar>.container-fluid{
+    justify-content: space-between;
+}
+
+.
+
+.nav-item.active {
+    color:#80d110;
+    font-weight: bold;
+}
+
+.nav-link  {
     color: #666;
 }
 
@@ -46,9 +65,20 @@ nav .fa-youtube {
     color: #ff0000;
 }
 
-.w-100 {
-    max-height: 90vh;
+.jumbotron {
+    text-shadow: 1px 1px 1px #000;;
+    padding: 120px;
+    background-image: url(https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822_960_720.jpg);
+    background-size: cover;
+    color:#fff;
+}
 
+.jumbotron .btn{
+    background-color: #80d110;
+    color:#fff;
+    border-radius: 50px;
+    padding:10px 30px;
+    box-shadow: 2px  2px 2px #666; 
 }
 
 section {
@@ -65,7 +95,7 @@ section p {
 }
 
 .benefits li {
-    padding: 40px;
+    padding: 4px;
     font-size: 1rem;
     list-style: none;
     text-align: center;
@@ -73,16 +103,13 @@ section p {
 }
 
 .benefits li span {
-    font-size: 3rem;
-    color: #ffffff;
+    font-size: 2.5rem;
+    color: #62a800;
     margin: 20px auto;
-    width: 100px;
-    line-height: 100px;
+    width: 70px;
     text-align: center;
     border-radius: 100%;
-    height: 100px;
-    background-color: #80d110;
-    ;
+    
 }
 
 .subscribe {
@@ -178,3 +205,64 @@ section p {
     position: relative;
     z-index: 2;
 }
+
+
+.contakt{
+    border-top:1px solid #ddd;;
+}
+
+.contakt li{
+    list-style: none;
+}
+
+.contakt span{
+    font-size: 2.5rem;
+    margin: 20px;
+}
+
+
+
+
+footer{
+     border-top: 1px solid #ddd;
+    padding: 20px;
+}
+
+footer p{
+    margin: 0;
+}
+
+
+.border-left{
+    border-left: 1px solid #ddd;
+}
+
+.cooperation .col-8 hr, .investment hr{
+   margin: 40px 0;
+}
+
+.investment img{
+    display: block;
+}
+
+.investment li{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+
+}
+
+
+.investment li::before{
+
+   font-style: normal;
+   margin:0px 0px 0px 10px;
+        font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f058";
+  color:#6bb900;
+    margin: 10px;
+    margin-left: -25px;
+ 
+}
+
