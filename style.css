@@ -16,23 +16,24 @@ h2::after {
     display: block;
     width: 40px;
     height: 2px;
-    background-color: #80d110;
+    background-color: #c11522;
     margin: 10px auto;
 }
 
 h3 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 400;
     color:#395c09;
-    margin-top: 50px;
+    margin-top: 10px;
+  text-align: center;
 }
 
 a{
-    color:#6db20d;
+    color:#1a92a8;
 }
 
 a:hover{
-    color:#4c7c0a;
+    color:#167c8e;
 }
 
 .navbar {
@@ -57,7 +58,7 @@ a:hover{
 }
 
 .navbar-light .navbar-nav .nav-link.active {
-    color: #75bc14;
+    color: #136d7e;
 }
 
 .nav-link {
@@ -68,7 +69,7 @@ a:hover{
     flex-direction: row;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #80d110;
+    color: #157081;
 }
 
 nav .fa-instagram {
@@ -105,18 +106,26 @@ nav .fa-youtube {
 }
 
 .jumbotron .btn {
-    background-color: #80d110;
-    color: #fff;
-    border-radius: 50px;
-    text-shadow: 1px 1px 1px #000;
-    ;
+    background-color: #ff5e17;
+    color: #ffffff;
+    text-shadow: 0 0 0;
+    border-radius: 0;
     padding: 10px 30px;
-    box-shadow: 2px 2px 12px #666;
+   margin-top: 50px;
     transition-duration: .3s;
+    border:1px solid #fff;
+}
+
+.jumbotron .btn-light{
+    background-color: rgb(255, 255, 255);
+    color:#ff5e17;
+    border-color: #ff5e17;
 }
 
 .jumbotron .btn:hover {
-    background-color: #6db20d;
+    background-color: #f85107;
+    border-color: #fff;
+    color:#fff;
 }
 
 section {
@@ -130,25 +139,47 @@ section p {
 
 .benefits ul {
     padding: 0;
+    margin-top: 100px;
+    
 
 }
 
 .benefits li {
-    padding: 4px;
-
+    padding: 20px;
     font-size: 1rem;
     list-style: none;
-    text-align: center;
+    text-align: justify;
     color: #666;
+    border: 1px solid #ddd;
+    position: relative;
+    padding-top: 50px;
+
+    
+    
 }
 
 .benefits li span {
-    font-size: 2.5rem;
-    color: #62a800;
-    margin: 40px auto;
-    margin-bottom: 0px;
-    width: 70px;
+    font-size: 2.2rem;
+    color: #fff;
+    margin: 0px auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    line-height: 80px;
+    position: absolute;
+    top:-40px;
+    left: 0;
+    right: 0;
     text-align: center;
+    display: block;
+    background-color: #578384;
+    border:1px solid #ddd;
+    transition-duration: .3s;
+}
+
+.benefits li:hover span{
+    background-color: #ff5e17;
+    color:#fff;
 }
 .subscribe {
     background-image: url(img/tlo.jpg);
@@ -157,17 +188,25 @@ section p {
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-    padding: 180px 0;
+    padding: 100px 0;
 }
-
+.subscribe a{ 
+    display: block;
+    width: 50%;
+    margin:20px auto;
+    color:#fff;
+    text-decoration:underline;
+}
 .subscribe input {
     border: 1px solid #fff;
-    ;
     padding: 10px 20px;
-    margin: 30px auto;
-    width: 50%;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    width: 30%;
+    display: inline-block;
     background-color: transparent;
     color: #fff;
+    background-color: rgba(0, 0, 0, 0.17);
 }
 
 .subscribe input::placeholder {
@@ -182,12 +221,12 @@ section p {
     margin: 0 auto;
     font-size: 1rem;
     text-transform: uppercase;
-    background-color: #80d110;
+    background-color: #fa1c1c;
     transition-duration: .3s;
 }
 
 .subscribe .btn:hover {
-    background-color: #6db20d;
+    background-color: #d10111;
 }
 
 .about h2::after {
@@ -228,7 +267,6 @@ section p {
 .black {
     position: absolute;
     background-color: rgba(0, 21, 69, 0.8);
-    z-index: -;
     top: 0;
     left: 0;
     width: 100%;
@@ -238,13 +276,14 @@ section p {
 
 .effect a {
     display: inline-block;
-    padding: 10px 40px;
-    background-color: #80d110;
+    padding: 12px 30px;
+    background-color: #ff5e17;
     border-radius: 50px;
     color: #fff;
-    margin-top: 20px;
+    font-weight: bold;
+    margin-top: 10px;
     font-size: 1.1rem;
-    box-shadow: 5px 5px 5px #262626;
+    box-shadow: 2px 2px 5px #262626;
     position: relative;
     z-index: 2;
     transition-duration: .3s;
@@ -278,8 +317,14 @@ padding-top: 100px;
 
 .contakt span {
     font-size: 1.5rem;
-    margin: 20px;
-    color: #426c09;
+    margin: 10px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    overflow: hidden;
+    background-color: #454545;
 }
 
 .small{
