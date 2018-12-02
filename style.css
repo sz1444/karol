@@ -5,6 +5,7 @@ body {
 
 h1{
     color:#ffffff;
+    text-align: left;
 }
 
 h2 {
@@ -60,24 +61,37 @@ a:hover{
 .navbar-light .navbar-nav .nav-link.active {
     color: #136d7e;
 }
+.navbar-light .navbar-brand{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
 
 .nav-link {
     color: #666;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
 }
 
 .d-inline{
     flex-direction: row;
 }
+
+
 .navbar-light .navbar-nav .nav-link:hover {
     color: #157081;
 }
 
 nav .fa-instagram {
     color: #8a3ab9;
+    font-size:1.3rem;
+    line-height:16px;
 }
 
 nav .fa-facebook {
     color: #3b5998ff;
+    font-size:1.3rem;
+    line-height:16px;
 }
 
 .nav-link{
@@ -95,14 +109,27 @@ nav .fa-youtube {
     padding-left: 15px;
 }
 
+header{
+    background-image: url(img/tlo4.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    min-height: 200px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .jumbotron {
     text-shadow: 1px 1px 1px #000;
-    ;
+  text-align: left;
     padding: 120px 0;
-    background-image: url(img/tlo4.jpg);
-    background-size: cover;
+   position: inherit;
+    background-color: transparent;;
     color: #fff;
     border-radius: 0;
+    
+      
 }
 
 .jumbotron .btn {
@@ -111,20 +138,20 @@ nav .fa-youtube {
     text-shadow: 0 0 0;
     border-radius: 0;
     padding: 10px 30px;
+    margin-left: 0;
    margin-top: 50px;
     transition-duration: .3s;
-    border:1px solid #fff;
+    border:1px solid #ff5e17;
 }
 
 .jumbotron .btn-light{
     background-color: rgb(255, 255, 255);
     color:#ff5e17;
-    border-color: #ff5e17;
+  
 }
 
 .jumbotron .btn:hover {
     background-color: #f85107;
-    border-color: #fff;
     color:#fff;
 }
 
@@ -177,6 +204,25 @@ section p {
     transition-duration: .3s;
 }
 
+.benefits li::after {
+    content: "";
+    width: 0%;
+    height: 1px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color: #ff5e17;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transition-duration: .5s;
+}
+
+.benefits li:hover::after{
+    width: 100%;
+}
+
+
 .benefits li:hover span{
     background-color: #ff5e17;
     color:#fff;
@@ -188,7 +234,7 @@ section p {
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-    padding: 100px 0;
+    padding: 70px 0;
 }
 .subscribe a{ 
     display: block;
@@ -253,7 +299,7 @@ section p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 180px 0;
+    padding: 60px 0;
     position: relative;
 
 }
@@ -278,19 +324,18 @@ section p {
     display: inline-block;
     padding: 12px 30px;
     background-color: #ff5e17;
-    border-radius: 50px;
+   
     color: #fff;
-    font-weight: bold;
     margin-top: 10px;
-    font-size: 1.1rem;
-    box-shadow: 2px 2px 5px #262626;
+    font-size: 1rem;
+text-transform: uppercase;
     position: relative;
     z-index: 2;
     transition-duration: .3s;
 }
 
 .effect a:hover {
-    background-color: #6db20d;
+    background-color: #d3561e;
     text-decoration: none;
 }
 
@@ -306,25 +351,44 @@ padding-top: 100px;
 .contakt li {
     list-style: none;
     padding: 0;
-    border-right: 1px solid #ddd;
-    margin: 40px auto;
+    width: 100%;
+  background-color: #074e6d;
+    margin: 30px auto;
+    color:#fff;
+    border-radius: 5px ;
     
 }
 
-.contakt li:nth-child(4){
-    border-right: 0;
+.contakt li p{
+    color:#fff;
 }
 
+.contakt li::after{
+    content: "312312";
+    position: absolute;
+    width: 90%;
+    height: 20px;
+    z-index: -1;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+    background-color: #000;;
+    border-radius: 100%;
+    box-shadow: 0 35px 22px #a0a0a0;;
+}
+
+
 .contakt span {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 10px;
-    color: #fff;
+    color: #ffffff;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     line-height: 50px;
     overflow: hidden;
-    background-color: #454545;
+    background-color: rgba(159, 14, 14, 0);
 }
 
 .small{
