@@ -21,6 +21,13 @@ h2::after {
     margin: 10px auto;
 }
 
+h2 img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: block;
+}
+
 h3 {
     font-size: 1.4rem;
     font-weight: 400;
@@ -66,12 +73,22 @@ a:hover{
     text-transform: uppercase;
 }
 
+.navbar-brand img{
+ width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border:2px solid #ff5e17;
+}
+
 .nav-link {
     color: #666;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 0.8rem;
 }
+
+
 
 .d-inline{
     flex-direction: row;
@@ -82,16 +99,27 @@ a:hover{
     color: #157081;
 }
 
+nav .fab{
+    transition-duration: .6s;
+     font-size:1.3rem;
+    line-height:16px;
+    font-weight:400;
+}
 nav .fa-instagram {
     color: #8a3ab9;
-    font-size:1.3rem;
-    line-height:16px;
+   
 }
 
 nav .fa-facebook {
-    color: #3b5998ff;
-    font-size:1.3rem;
-    line-height:16px;
+    color: #3b5998;
+  
+ 
+    
+}
+
+nav .fab:hover{
+       transform: rotate(3600deg)
+    
 }
 
 .nav-link{
@@ -202,8 +230,8 @@ section p {
 .header .btn{
     border-radius: 0;
    color:#fff;
-    
-    background-color: #0f0f0f;
+    border:0;
+    background-color: #0e2745;
     padding: 10px 20px;
     margin: 10px;
     margin-top: 20px;
@@ -215,9 +243,25 @@ section p {
     
 
 }
+.modal-body{
+    text-align: left;
+}
 
-.poup{
-    po
+.facbook{
+    position: fixed;
+    left:0;
+    background-color: #000;
+    width: 20px;
+    height: 20px;
+    top:50%;
+}
+
+.modal-body a{
+ background-color: #1647a5;
+    color:#fff;
+    padding: 15px 40px;
+    margin-top: 10px;
+    display: inline-block;
 }
 
 .benefits li {
@@ -341,17 +385,41 @@ section p {
     margin-left: 0;
 }
 
-.about .container {
-    background-image: url("img/tlo2.png");
-    background-repeat: no-repeat;
-    background-position: right top;
+.about  {
+ background-image: url(img/tlo2.png);
+    -webkit-background-size: 50%;
     background-size: 50%;
-
+    background-repeat: no-repeat;
+    background-position:right 0;
+    
 }
 
-.about .col-sm {
-    max-width: 50%;
+
+.about h3{
+    color:#fff;
+}
+.about img{
+    border-radius: 50%;
+    border:5px solid #fff;
+    width: 150px;
+    height: 150px;
+    
+    
+}
+
+.about a.facebook{
+    background-color: #264880;
+    padding: 12px 10px;
+    display: inline-block;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.about .col-sm-6 {
+    position: relative;
     text-align: left;
+   
 }
 
 .effect {
