@@ -3,6 +3,25 @@ body {
     overflow-x: hidden;
 }
 
+.messenger{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background-color: #fff;
+    width: 4rem;
+    height: 4rem;
+        text-align: center;
+    border-radius: 100%;
+    box-shadow: -5px 5px 35px #666;
+
+}
+
+.messenger a{
+    font-size: 3rem;
+    line-height: 4rem;
+    
+}
+
 h1{
     color:#ffffff;
     text-align: left;
@@ -100,7 +119,7 @@ a:hover{
 }
 
 nav .fab{
-    transition-duration: .6s;
+    transition-duration: .1s;
      font-size:1.3rem;
     line-height:16px;
     font-weight:400;
@@ -223,7 +242,7 @@ section p {
 
 .header p{
     color:#fff;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 2rem;
 }
 
@@ -330,11 +349,22 @@ section p {
     padding: 70px 0;
 }
 .subscribe a{ 
-    display: block;
-    width: 50%;
+    display: inline-block;
+    padding: 15px 50px;
     margin:20px auto;
     color:#fff;
-    text-decoration:underline;
+    background-color: #265595;
+    text-decoration:none;
+   font-size:1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 10px 10px 0px #fff;
+    transition-duration: .3s;
+}
+.subscribe a:hover{
+    box-shadow: 0 0 0 ;
+   
+    transform: translateY(10px)translate(10px);
 }
 .subscribe input {
     border: 1px solid #fff;
