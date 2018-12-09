@@ -3,6 +3,33 @@ body {
     overflow-x: hidden;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey; 
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0e2745; 
+   
+    
+ 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #091b2f; 
+}
+
+.livestyle .container{
+    max-width: 60%;
+}
 .messenger{
     position: fixed;
     right: 30px;
@@ -12,9 +39,9 @@ body {
     height: 4rem;
         text-align: center;
     border-radius: 100%;
-    box-shadow: -5px 5px 35px #666;
 
 }
+
 
 .messenger a{
     font-size: 3rem;
@@ -41,10 +68,11 @@ h2::after {
 }
 
 h2 img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+    width: 250px;
+
     display: block;
+    margin: auto;
+    
 }
 
 h3 {
@@ -53,6 +81,10 @@ h3 {
     color:#395c09;
     margin-top: 10px;
   text-align: center;
+}
+
+.small-header{
+    font-size: 1.2rem;
 }
 
 a{
@@ -453,16 +485,95 @@ section p {
 }
 
 .effect {
-    color: #fff;
-    background-image: url(img/tlo3.jpg);
+    color: #000;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 60px 0;
     position: relative;
-
+line-height: 0px;
 }
+
+.effect ul{
+    padding: 0;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.effect li{
+   margin-left: -5px;
+    display: inline-block;
+    padding: 0;
+    list-style: none;
+    height: 250px; 
+    position: relative;
+    overflow: hidden;
+    opacity: .;
+    padding: 20px;
+    border: 20px solid #fff;
+    
+    
+   
+}
+
+.effect li img{
+   position: absolute;
+    width: 100%;
+    left:0;
+    right: 0;
+    margin: auto;
+    top:0;
+    opacity: 0.8;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+.effect li img:hover{
+      -webkit-filter: grayscale(0%), opacity 1; /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    opacity: 1;
+  
+}
+
+.shows{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.57);
+    visibility: hidden;
+ opacity: 0;
+    transition-duration: .3s;
+    
+}
+
+.shows img{
+    height: 70vh;
+
+     margin-top: 15vh;
+    
+}
+
+.shows .close1{
+    position: fixed;
+    top:20px;
+    right: 20px;
+   color:#fff;
+    width: 50px;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    cursor:pointer;
+    transition-duration: .3s;
+}
+
+.shows .close1:hover{
+    color:red;
+}
+
 
 .effect h2 {
     position: relative;
@@ -470,14 +581,7 @@ section p {
 
 }
 
-.black {
-    position: absolute;
-    background-color: rgba(0, 21, 69, 0.8);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+
 
 
 .effect a {
@@ -499,9 +603,55 @@ text-transform: uppercase;
     text-decoration: none;
 }
 
+.rockwall{
+    background-color: #fff;
+  
+}
+
+.rockwall .container a{
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: inline-block;
+    background-color: #0e2745;
+    border:1px solid #0e2745;
+    padding: 12px 20px;
+    color:#fff;
+     margin: 6px;
+    margin-top: 20px;
+   
+}
+
+
+.rockwall ul{
+    width: 70%;
+    display: block;margin:auto;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.rockwall li{
+    display: inline-block;
+    padding: 10px;
+
+}
+
+.rockwall li span{
+    color:#ff5e17;
+    padding:0px 10px;
+}
+
+
+.rockwall a.btn-light{
+  background-color: #fff;
+    color:#0e2745;
+}
+
+
 .contakt {
 padding-top: 100px;
-    border-top: 1px solid #ddd;
     
 }
 

@@ -1,24 +1,25 @@
-$(document).ready(function() {
+var li = document.querySelectorAll('.effect ul img');
+var ul = document.querySelector('.effect ul');
+var show = document.querySelector('.shows');
 
-  var counters = $(".count");
-  var countersQuantity = counters.length;
-  var counter = [];
 
-  for (i = 0; i < countersQuantity; i++) {
-    counter[i] = parseInt(counters[i].innerHTML);
-  }
 
-  var count = function(start, value, id) {
-    var localStart = start;
-    setInterval(function() {
-      if (localStart < value) {
-        localStart++;
-        counters[id].innerHTML = localStart;
-      }
-    }, 60);
-  }
 
-  for (j = 0; j < countersQuantity; j++) {
-    count(0, counter[j], j);
-  }
-});
+for (var i = 0; i < li.length; i++) {
+    li[i].addEventListener('click', showImg);
+}
+
+
+function showImg() {
+    document.querySelector('.close1').addEventListener('click', close);
+    show.childNodes[1].src = this.src;
+    show.style.visibility = "visible";
+    show.style.opacity = "1";
+}
+ function close() {
+        console.log('diział');
+        show.style.visibility = "hidden";
+        show.style.opacity = "0";
+    }
+
+
